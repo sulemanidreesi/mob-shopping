@@ -1,25 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You need to run following commands for setup:
 
-Things you may want to cover:
+bundle install
 
-* Ruby version
+yarn install
 
-* System dependencies
+rails db:create
 
-* Configuration
+rails db:migrate
 
-* Database creation
+rake dummy_data_create
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # mob-shopping

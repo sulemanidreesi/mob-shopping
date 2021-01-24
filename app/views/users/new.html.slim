@@ -1,0 +1,16 @@
+.login-main.mb-5.page-body.p-2
+  .inner-form.mx-auto
+    = image_tag 'logo.png', alt: 'logo', class: 'mx-auto d-block logo'
+    h2.login-header Welcome to Mob Shopping 
+    = form_for @user do |f|
+      .form-group.login-input
+        = f.text_field :first_name, autofocus: true, class: 'form-control', placeholder: 'First Name'
+      .form-group.login-input
+        = f.text_field :last_name, autofocus: true, class: 'form-control', placeholder: 'Last Name'
+      .form-group.login-input
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: 'Email'
+      .form-group.login-input
+        = f.password_field :password, autocomplete: "current-password", class: 'form-control', placeholder: 'Password'
+
+      .actions.text-center
+        = f.submit "Sign Up", class: 'btn btn-primary login-btn'

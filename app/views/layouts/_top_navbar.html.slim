@@ -1,0 +1,7 @@
+nav.navbar.navbar-expand-lg
+  = image_tag 'logo.png', alt: 'logo', class: "nav-logo"
+  .d-flex.flex-column
+    span = current_user.name
+    = link_to logout_path do
+      = image_tag "logout.svg"
+      span.ml-2 Logout

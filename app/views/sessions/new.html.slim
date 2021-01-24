@@ -1,0 +1,25 @@
+/ p id="”alert”" = alert
+/ h1 Login
+/ = form_tag sessions_path do |form|
+/   div class="”field”" 
+/     = label_tag :email
+/     = text_field_tag :email
+/   div class="”field”" 
+/     = label_tag :password
+/     = password_field_tag :password
+/   div class="”actions”" 
+/     = submit_tag
+
+
+.login-main.mb-5.page-body.p-2
+  .inner-form.mx-auto
+    = image_tag 'logo.png', alt: 'logo', class: 'mx-auto d-block logo'
+    h2.login-header Welcome to Mob Shopping 
+    = form_tag sessions_path do |f|
+      .form-group.login-input
+        = email_field_tag :email
+      .form-group.login-input
+        = password_field_tag :password
+
+      .actions.text-center
+        = submit_tag "Sign In", class: 'btn btn-primary login-btn'

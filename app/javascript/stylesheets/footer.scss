@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #374176;
+  border-top: 1px solid #ced4da;
+
+  .light-text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #47506B;
+  }
+
+  .section-1 {
+
+    .bold-text {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      color: #47506B;
+    }
+  }
+
+  .inner-footer {
+    padding: 30px;
+  }
+}

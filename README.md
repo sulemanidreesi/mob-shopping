@@ -10,6 +10,6 @@ rails db:create
 
 rails db:migrate
 
-rake dummy_data_create
+rake dummy_data:create
 
 # mob-shopping
